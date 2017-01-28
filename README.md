@@ -1,18 +1,11 @@
-# tundra
-Proyecto de fin de ciclo de DAW
+#TUNDRA DEV ENVIROMENT
 
-#Proximas implementaciones: 26/01/2017
+	Entorno básico desarrollado como base de la futura apliación TundraPM.
 
-	- Unificar ficheros del lado del servidor
-		(Prioridad: MEDIA)
-	-Establecer rutas y endpoints via Express
-		(Prioridad: MEDIA)
-	-Incorporar AngularJS y dependencias 
-		(Prioridad: ALTA)
-	-Estructura modular para AngularJS
-		(Prioridad: ALTA)
-	-Layouts HTML -> ui.bootstrap
-		(Prioridad: ALTA)
-	-Desarrollo de la REST API 
-		(Prioridad: MEDIA)
+	#Futuras implementaciones: 
 
+		-Dependencias FrontEnd
+
+		-Modularización AngularJS
+
+		-Diseño y UI+UX

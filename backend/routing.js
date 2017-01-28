@@ -3,10 +3,12 @@ var router = express.Router();
 
 /*GET Home Page*/
 router.get('/', function(req, res){
-	res.render('../static/src/index');
+	res.render('../public/src/index');
 });
-router.get('/home',function(req, res){
-	res.render('../static/src/pages/home/home');
+
+/*GET API client*/
+router.get('/api',function(req, res){
+	res.render('../backend/api/home');
 });
 
 module.exports = router; 
