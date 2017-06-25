@@ -1,0 +1,32 @@
+<div class="row" >
+	<tpm-sidebar class='col-md-2 col-sm-2'></tpm-sidebar>
+	<div class="col-md-10 col-sm-10">
+		<div class='panel panel-default'>
+			<div class="panel-heading">
+				<h2>{{state();}}</h2>
+			</div>
+			<div class="panel-body">
+				<div ng-if="state()=='overview'">
+
+				</div>
+				<div ng-if="state()=='backlog'">
+
+				</div>
+				<div ng-if="state()=='issues'">
+					<ul class="issue-list">
+						<li class="col-md-3" ng-controller="ModalDemoCtrlIssue as $ctrl"><a href="#" ng-click="$ctrl.open('lg')"><i class="material-icons">add_alert</i>Nueva issue</a></li>
+					</ul>
+				</div>
+				<div ng-if="state()=='code'">
+
+				</div>
+				<div ng-if="state()=='documentation'">
+
+				</div>
+				<div ng-if="state()=='team'">
+
+				</div>
+			</div>			
+		</div>
+	</div>
+</div>

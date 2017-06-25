@@ -1,0 +1,29 @@
+<!--<aside class="al-sidebar">
+	<div>
+		<ul class="al-sidebar-list" >
+			<li ng-repeat="item in menuP">
+				<a ng-href="{{hash+''+item.toLowerCase();}}" >{{item}}</a>
+			</li>	
+		</ul>
+	</div>
+</aside>-->
+
+<div class="divaside" ng-controller="CollapseDemoCtrl">
+<button type="button" class="btn btn-default togglebutton" ng-click="isCollapsedHorizontal = !isCollapsedHorizontal"><i class="material-icons">swap_horiz</i></button>
+	<aside class="al-sidebar horizontal-collapse" uib-collapse="isCollapsedHorizontal" horizontal>
+		<div>
+			<ul class="al-sidebar-list" >
+				<li ng-repeat="item in menuP">
+					<a ng-href="{{hash+''+item.toLowerCase();}}" >{{item}}</a>
+				</li>	
+			</ul>
+		</div>
+	</aside>
+</div>
+
+<!--<div ng-controller="CollapseDemoCtrl">
+	<button type="button" class="btn btn-default" ng-click="isCollapsedHorizontal = !isCollapsedHorizontal">Toggle collapse Horizontally</button>
+	<div class="horizontal-collapse" uib-collapse="isCollapsedHorizontal" horizontal>
+		<div class="well well-lg">Some content</div>
+	</div>
+</div>-->

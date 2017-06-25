@@ -1,0 +1,16 @@
+<div class="row" ng-if="!showList();">
+	<div class="col-md-10 col-md-offset-1 dev">
+		<div class='panel panel-default'>
+			<div class="panel-body projectlist">
+				<!--COPIAR ESTRUCTURA CATALOGO TIENDA-->
+				<ul class="project-list">
+					<li class="col-md-3" ng-controller="ModalDemoCtrlProject as $ctrl"><a href="#" ng-click="$ctrl.open('lg')"><i class="material-icons">note_add</i>Nuevo Proyecto</a></li>
+					<li ng-repeat="p in util" class="projects col-md-3"><a ng-href="#/projects/{{p.route}}/overview" > {{p.name}} </a></li>
+				</ul>	
+			</div>			
+		</div>
+	</div>
+</div>
+<div ng-if="showList();">	
+	<div ui-view class="col-md-12 projectOverview"></div>
+</div>

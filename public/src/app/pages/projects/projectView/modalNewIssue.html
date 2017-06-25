@@ -1,0 +1,18 @@
+<div class="col-xs-12 col-sm-12 newissuewindow">
+	<form method="post">
+		<h3>Crear nueva issue</h3>
+			<!--<p>Introduce la direccion de correo electronico para el registro</p>-->
+		<label for="name">Nombre de issue:</label><br>
+		<input type="text" id="issue_name" name="name_create" value="" class="is_required validate account_input form-control"><br>
+		<label for="description">Descripción de la issue:</label><br>
+		<textarea id="issue_description" name="description_create" rows="5" cols="80" placeholder="Introduzca su descripción de la issue"></textarea><br>
+		<label for="tags">Etiquetas:</label><br>
+		<input type="text" id="issue_tags" name="tags_create" value="" placeholder="Introduzca las etiquetas separadas por comas" class="is_required validate account_input form-control"><br>
+		<button class="btn btn-default btn-md" type="submit" id="SubmitCreate" name="SubmitCreate">
+			<span>
+				<i class="fa fa-user left"></i>
+				Crear issue
+			</span>
+		</button>
+	</form>
+</div>

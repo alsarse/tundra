@@ -1,0 +1,36 @@
+<div class="col-xs-12 col-sm-12 logwindow">
+	<div class="col-xs-12 col-sm-6 regwindow">
+		<form id="logupForm" method="post">
+			<h3>Registro</h3>
+			<!--<p>Introduce la direccion de correo electronico para el registro</p>-->
+			<label for="email">Correo electronico:</label><br>
+			<input type="text" class="is_required validate account_input form-control" data-validate="isEmail" id="email_create" name="	email_create" value=""><br>
+			<label for="password">Contraseña:</label><br>
+			<input class="is_required validate account_input form-control" type="password" data-validate="isPasswd" id="passwd" name="passwd" value=""><br>
+			<label for="job">Puesto:</label><br>
+			<input type="checkbox" name="projectmanager"><span> Project Manager</span>&nbsp;&nbsp;&nbsp;
+			<input type="checkbox" name="Devop"><span> Devop</span><br><br>
+			<button class="btn btn-default btn-md" type="submit" id="SubmitCreate" name="SubmitCreate">
+				<span>
+					<i class="fa fa-user left"></i>
+					Crea la cuenta
+				</span>
+			</button>
+		</form>
+	</div>
+	<div class="col-xs-12 col-sm-6">
+		<form id="loginForm" method="post">
+			<h3>¿Estas registrado?</h3>
+			<label for="email">Correo electronico:</label><br>
+			<input type="text" class="is_required validate account_input form-control" data-validate="isEmail" id="email_create" name	="email_create" value=""><br>
+			<label for="password">Contraseña:</label><br>
+			<input class="is_required validate account_input form-control" type="password" data-validate="isPasswd" id="passwd" name="passwd" value=""><br>
+			<button type="submit" id="SubmitLogin" name="SubmitLogin" class="btn btn-default btn-md" ng-click="validateLogin()">
+				<span>
+					<i class="fa fa-lock left"></i>
+						Login
+				</span>
+			</button>
+		</form>
+	</div>
+</div>

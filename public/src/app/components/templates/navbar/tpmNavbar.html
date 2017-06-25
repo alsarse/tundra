@@ -1,0 +1,46 @@
+<div class="row navbar navbar-default">
+	<div class="col-md-5 col-sm-4 col-xs-8">
+		<ul class="navbar-nav">
+			<li class='corp'>
+				<a href="#" ui-sref="/dashboard">
+					<img class="logotipo" src="css/tundrayLogo.png" alt="Logotipo"/>
+				</a>
+			</li>
+		</ul>	
+	</div>
+
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>                        
+		</button>
+	</div>
+
+	<div class="col-xs-12 col-sm-8 col-md-7">
+	<div class="col-md-9 col-sm-9">	
+		
+			<ul class="navbar-nav">
+				<li>
+					<a href="#"><i class="material-icons">language</i><span class="icon-legend">Discover</span></a>
+				</li>
+				<li>
+					<a href="#" ui-sref="/projects"><i class="material-icons">apps</i><span class="icon-legend">
+						Projects</span></a>
+				</li>
+				
+
+				</ul>
+		
+	</div>
+	<div class="col-md-3 col-sm-3">
+		
+		<ul class="navbar-nav navbar-right">
+			<li>
+				<a href="#" ng-if="location.path='/home'" ng-click="availableLogin()"><i class="material-icons">account_circle</i>{{currentUser}}</a>
+				<a href="#" ng-click="location.path('profile')"><i class="material-icons">account_circle</i>{{currentUser}}</a>
+			</li>
+		</ul>
+	</div>
+	</div>
+</div>

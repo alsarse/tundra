@@ -1,0 +1,40 @@
+/*----------
+	ESTILOS GENERALES --> DE FORMA PROVISIONAL
+-----------*/
+
+.error{
+	font-weight: bold;
+	color: red;
+}
+.dev{
+	padding: 10px;
+}
+
+.windowTitle{
+	background-color: #03A9F4!important;
+	color: #3949AB!important;
+	border: 2px solid #F57C00!important;
+	border-width: 2px 2px 0px 2px!important;
+	border-radius: 5px 5px 0px 0px!important;
+	box-shadow: 10px 10px 5px #888888!important;
+	background: linear-gradient(to bottom, #03a9f4 0%, #bbdefb 100%);
+}
+
+.windowContent{
+	background-color: #BBDEFB!important;
+	border: 2px solid #F57C00!important;
+	border-width: 0px 2px 2px 2px!important;
+	border-radius: 0px 0px 5px 5px!important;
+	box-shadow: 10px 10px 5px #888888!important;
+}
+
+.banner{
+	background-color: #BBDEFB!important;
+	border: 2px solid #F57C00!important;
+	border-radius: 5px!important;
+	box-shadow: 10px 10px 5px #888888!important;
+}
+
+.panel-default {
+    border: none;
+}

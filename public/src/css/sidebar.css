@@ -1,0 +1,46 @@
+.al-sidebar {
+    width: 15%;
+    height: 75%;
+    z-index: 904;
+    background-color: #CCC;
+    opacity: 0.8;
+    position: fixed;
+    margin-top: 0.6%;
+    border: 2px solid #F57C00!important;
+    border-width: 2px 2px 2px 0px!important;
+    border-radius: 0px 5px 5px 0px!important;
+    box-shadow: 10px 10px 5px #888888!important;
+}
+.al-sidebar-list{
+	font: 18px 'Uni Sans', sans-serif;
+}
+
+.al-sidebar-list li{
+	margin: 20px 0px 20px 0px;
+}
+.al-sidebar-list li:hover{
+	color: #2196F3;
+	font-size:20px; 
+}
+
+.horizontal-collapse {
+  height: 55%;
+}
+
+.togglebutton{
+    float: right;
+    position: relative;
+    z-index: 905;
+}
+.divaside{
+    width: 200px;
+    height: 50px;
+    margin: 0px;
+    margin-top: 1.4%;
+    z-index: 905; 
+    float: left;
+    margin-right: 0.8%;
+}
+.al-sidebar-list li{
+    max-width: 125px;
+}

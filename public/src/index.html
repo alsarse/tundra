@@ -1,15 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="UTF-8"/>
-	<link href="designui.css" rel="stylesheet"/>
-	<script type="text/javascript" src="libs.js"></script>
-	<script type="text/javascript" src="pages.js"></script>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Tundra PM  </title>
+	
+	<!--JavaScript base-->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+	
+	<!--ngInjections-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.3.1/ui-bootstrap-tpls.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-local-storage/0.5.0/angular-local-storage.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angularjs-toaster/1.1.0/toaster.min.js"></script>
+	<script src="https://code.angularjs.org/1.2.0/angular-animate.min.js" ></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-touch/1.6.0/angular-touch.js"></script>
+	
+	<!--Developed-->
+	<script src="app/app.js"></script>
+	<script src="app/pages/pages.module.js"></script>
+	<script src="app/pages/dashboard/dashboard.module.js"></script>
+	<script src="app/pages/dashboard/dashboardCtrl.js"></script>
+	<script src="app/pages/about/about.module.js"></script>
+	<script src="app/pages/about/aboutCtrl.js"></script>
+	<script src="app/pages/chat/chat.module.js"></script>
+	<script src="app/pages/chat/chatCtrl.js"></script>
+	<script src="app/pages/profile/profile.module.js"></script>
+	<script src="app/pages/profile/profileCtrl.js"></script>
+	<script src="app/pages/projects/projects.module.js"></script>
+	<script src="app/pages/projects/projectsCtrl.js"></script>
+	<script src="app/pages/projects/projectView/coreProjectCtrl.js"></script>
+	<script src="app/pages/home/home.module.js"></script>
+	<script src="app/pages/home/homeCtrl.js"></script>
+	<script src="app/components/components.module.js"></script>
+	<script src="app/components/templates/footer/footer.module.js"></script>
+	<script src="app/components/templates/footer/footerCtrl.js"></script>
+	<script src="app/components/templates/navbar/navbar.module.js"></script>
+	<script src="app/components/templates/navbar/navbarCtrl.js"></script>
+	<script src="app/components/templates/sidebar/sidebar.module.js"></script>
+	<script src="app/components/templates/sidebar/sidebarCtrl.js"></script>
+	
+	
+	<!--STYLES-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"/>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/angularjs-toaster/1.1.0/toaster.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/main.css"/>
+	<link rel="stylesheet" href="css/layout.css"/>
+	<link rel="stylesheet" href="css/navbar.css"/>
+	<link rel="stylesheet" href="css/sidebar.css"/>
+	<link rel="stylesheet" href="css/home.css"/>
+	<link rel="stylesheet" href="css/projects.css"/>
+	<link rel="stylesheet" href="css/footer.css"/>
+	
 </head>
-<body ng-app="Tundra">
-	<div ng-controller="tundraTest">
-		<h2>Hola Mundo</h2>
-		<p>{{prueba}}</p>
-	</div>
+<body ng-app="Tundrapm">
+		<tpm-navbar></tpm-navbar>
+		<div class="row content">
+			<div ui-view class="col-md-12 viewer"></div>
+		</div>
+		<tpm-footer></tpm-footer>
 </body>
 </html>

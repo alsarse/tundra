@@ -1,0 +1,25 @@
+.modal-content{
+	margin-top:10%;
+}
+
+.logwindow{
+	background: linear-gradient(to bottom, #03a9f4 0%, #bbdefb 100%);
+	padding: 20px;
+	border-radius: 10px;
+	margin-top:0%;
+}
+
+.regwindow{
+	border: 1px solid grey; 
+	border-style:none double none none;
+}
+
+.slider{
+	height: 490px; 
+	margin-top:1.5%
+}
+
+.images{
+	margin:auto; height: 490px; 
+	width: 100%
+}

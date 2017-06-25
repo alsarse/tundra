@@ -1,0 +1,40 @@
+.projectlist{
+	background-color: #BBDEFB!important;
+	border: 2px solid #F57C00!important;
+	font-weight: bold;
+	border-radius: 5px!important;
+	box-shadow: 10px 10px 5px #888888!important;
+	text-align: center;
+}
+
+.projectOverview div div div .panel-heading{
+	margin-top: 10px;
+	background-color: #03A9F4!important;
+	color: #3949AB!important;
+	border: 2px solid #F57C00!important;
+	border-width: 2px 2px 0px 2px!important;
+	border-radius: 5px 5px 0px 0px!important;
+	box-shadow: 10px 10px 5px #888888!important;
+	background: linear-gradient(to bottom, #03a9f4 0%, #bbdefb 100%);
+}
+
+.projectOverview div div div .panel-body{
+	background-color: #BBDEFB!important;
+	border: 2px solid #F57C00!important;
+	border-radius: 5px!important;
+	border-width: 0px 2px 2px 2px!important;
+	box-shadow: 10px 10px 5px #888888!important;
+	border-radius: 0px 0px 5px 5px!important;
+}
+
+li.projects{
+	height: 29px;
+	margin-top: 7px;
+}
+
+.newprojectwindow, .newissuewindow{
+	background: linear-gradient(to bottom, #03a9f4 0%, #bbdefb 100%);
+	padding: 20px;
+	border-radius: 10px;
+	margin-top:0%;
+}

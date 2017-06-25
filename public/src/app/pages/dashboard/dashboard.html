@@ -1,0 +1,43 @@
+<div class="row" ng-if="redirect()">
+		<div class="col-md-8 dev">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="panel panel-default">
+  						<div class="panel-heading windowTitle"><h2>Novedades</h2></div>
+  						<div class="panel-body windowContent">
+  							<ul class="new-list" ng-repeat='news in news'>
+  								<li> <b>{{news.who}}</b> has <b>{{news.verb}}</b> a <b>{{news.item.type}}</b> from <b>{{news.project}}: </b><i>{{news.item.desc}}</i></li>
+  							</ul>
+  						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4 dev">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="panel panel-default">
+  						<div class="panel-heading windowTitle"><h4>Notificaciones</h4></div>
+  						<div class="panel-body windowContent">
+  							<ul ng-repeat='not in notifications'>
+  							<li>
+  								<b>{{not.user}}</b> has {{not.action+" "+not.content}}
+  								</br>
+  								<i>{{not.body}}</i>
+  							</li>
+  							</ul>
+  						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="panel panel-default">
+						<div class="panel-body windowContent banner">
+						
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</div>

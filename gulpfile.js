@@ -6,7 +6,7 @@ var nodemon = require ('nodemon');
 gulp.task('bundleMod', function(){
 	gulp.src('public/lib/js/*.js', {base: './'})
 	.pipe(concat('libs.js'))
-	.pipe(gulp.dest('public/src/assets'))
+	.pipe(gulp.dest('public/src/assets'));
 })
 
 gulp.task('bundlePages', function(){

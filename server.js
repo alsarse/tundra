@@ -1,24 +1,13 @@
 //Import node requeriments
-var express = require ('express');
-var ejs  = require('ejs');
-var path = require('path'); 
 
-var routes = require ('./backend/routing');
+const app= require('./backend/app')
+const mongoose = require('mongoose')
+const config = require('./config')
 
-var app = express(); 
 
-var render = ejs.renderFile;
-app.engine('html', render);
-app.set('view engine', 'html');
 
-app.use(express.static(path.join(__dirname, 'public/src/assets')));
-app.use('/', routes);
-
-/*404 Handler error*/
-app.use(function(req, res, next){
-	var err= new Error('Not found');
-	err.status = 404;
-	next(err);
+mongoose.connect(config.db, (err, res) =>{
+	if(err) throw err;
+	console.log('Conexion establecida con mongodb');
+	app.listen(config.port);
 });
-
-app.listen(3000);
